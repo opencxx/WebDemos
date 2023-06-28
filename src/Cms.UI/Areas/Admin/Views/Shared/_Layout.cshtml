@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>@ViewData["Title"] - Cms</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+
+  <header>
+    <div>
+      <ul>
+        <li><a asp-area="admin" asp-controller="home" asp-action="index">管理</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <div>
+    @RenderBody()
+  </div>
+</body>
+</html>
